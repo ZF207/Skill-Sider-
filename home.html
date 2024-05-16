@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   
+    <!-- slice slide carasoul -->
+         
+    <link rel="stylesheet" type="text/css" href="https://www.skillsider.pk/studens-asset/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://www.skillsider.pk/studens-asset/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://www.skillsider.pk/studens-asset/css/style.css">
+    <link rel="stylesheet" href="https://www.skillsider.pk/studens-asset/css/query.css">
+    <link rel="stylesheet" href="https://www.skillsider.pk/studens-asset/css/general.css">
+    <link rel="shortcut icon" href="https://www.skillsider.pk/assets/images/logo.png" />
+    <title>SkillSider.pk</title>
+    <!-- font awesome solid -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media (max-width: 576px) {
+            .sm-text-size {
+                font-size: 20px;
+            }
+        }
+    </style>
+   <style>
+    /* Custom styles for centering the menu */
+    @media (min-width: 768px) {
+      .navbar-nav {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    /* Custom styles to remove border around the toggle button */
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    .dropdown-menu::before{
+        border:none;
+    }
+    .navbar-toggler{
+        font-size: x-large;
+    color: #FFA42D;
+        
+    }
+    .main-nav-link{
+        
+        font-size:large!important;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var menuIsOpen = false;
+
+      navbarToggler.addEventListener('click', function () {
+        menuIsOpen = !menuIsOpen;
+        updateToggleButton();
+      });
+
+      function updateToggleButton() {
+        var icon = menuIsOpen ? '✕' : '☰';
+        navbarToggler.innerHTML = icon;
+      }
+    });
+  </script>
+  
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light header bg-white">
+  <div class="container-fluid">
+
+    <!-- Logo on the left -->
+    
+     <div class="main-logo-div">
+        <a href="https://www.skillsider.pk/home" class="navbar-brand">
+            <img src="https://www.skillsider.pk/assets/images/mian-logo.png" alt="Logo" class="main-logo" >
+        </a>
+    </div>
+
+    <!-- Custom toggle button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      ☰ <!-- Default icon, will be updated by JavaScript -->
+    </button>
+
+    <!-- Centered navigation menu with dropdown and login button -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link main-nav-link" href="https://www.skillsider.pk/home">Home</a>
+        </li>
+        <li class="nav-item dropdown px-lg-1" id="dropdown">
+    <a class="nav-link dropdown-toggle main-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Products We Offer
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown-menu">
+                                            <a class="dropdown-item main-nav-link px-0" href="https://www.skillsider.pk/package/1" data-bs-auto-close="true">SkillSider Lite</a>
+                <hr class="my-0 mb-1"/>
+                            <a class="dropdown-item main-nav-link px-0" href="https://www.skillsider.pk/package/2" data-bs-auto-close="true">SkillSider Standard</a>
+                <hr class="my-0 mb-1"/>
+                            <a class="dropdown-item main-nav-link px-0" href="https://www.skillsider.pk/package/3" data-bs-auto-close="true">SkillSider Pro</a>
+                <hr class="my-0 mb-1"/>
+                        </div>
+</li>
+
+
+        <li class="nav-item px-lg-1">
+          <a class="nav-link main-nav-link" href="https://www.skillsider.pk/about-us">About</a>
+        </li>
+        <li class="nav-item px-lg-1">
+          <a class="nav-link main-nav-link" href="https://www.skillsider.pk/blog">Blog</a>
+        </li>
+        <li class="nav-item px-lg-1">
+          <a class="nav-link main-nav-link" href="https://www.skillsider.pk/contact-us">Contact</a>
+        </li>
+        
+      </ul>
+
+      <!-- Login button - visible on small screens -->
+      
+      <div class="d-flex d-lg-none">
+                   <a  href="https://www.skillsider.pk/login/page">
+             <button class="btn btn-outline-primary main__btn rounded-pill " type="button">Dashboard</button>
+            </a>
+                  </div>
+    </div>
+
+    <!-- Login button on the right - visible on larger screens -->
+    <div class="d-none d-lg-flex">
+     
+                    
+            <a  href="https://www.skillsider.pk/login/page">
+             <button class="btn btn-outline-primary main__btn rounded-pill nav-btn-2" type="button">Dashboard</button>
+            </a>
+                </div>
+
+  </div>
+</nav>
+   
+
+    <span class="btn-mobile-nav" style="display:none!important">
+        
+    </span>
+
+ 
+   
+ 
+   
+      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Custom CSS to center and resize the modal */
+        .modal-lg {
+            max-width: 90%;
+        }
+
+        ifram {
+            margin:auto;
+            display:block;
+        }
+          /* Add this CSS in your HTML or external CSS file */
+    .card:hover {
+        cursor: pointer; /* Change the cursor to a hand pointer */
+    }
+    </style>
+    <main>
+        <!-- /////////// hero section -->
+        <div>
+            <div class="container">
+                <div class="herosection row">
+                    <div class="herosection__left col-xl-7 col-lg-7 col-md-8">
+                        <h4 class="text-muted welcome-text">Welcome to SkillSider</h4>
+                        <h1 class="herosection__heading__first">Your Gateway to Success in the Digital World</h1>
+                        <a href="https://youtube.com/@skillsider">
+                            <button class="main__btn rounded-pill hero-btn">
+                                <span>Get Started Now</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="herosection__right  col-xl-5 col-lg-5 col-md-4">
+                        <img src="https://www.skillsider.pk/studens-asset/assets/img/left.png" alt="" class="herosection__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- course full list -->
+        <div>
+            <div class="container">
+                <div class="  course-full-list">
+
+
+                    <div class="  course-full-items">
+                        <img src="https://www.skillsider.pk/studens-asset/assets/img/distance-Learning.png" alt="">
+                        <div>
+                            <dt>10,000 + </dt>
+                            <p class="course-full-list-text">HAPPY STUDENTS</p>
+                        </div>
+
+                    </div>
+                    <div class="course-full-items ">
+                        <img src="https://www.skillsider.pk/studens-asset/assets/img/money.png" alt="">
+                        <div>
+                            <dt>1.7CAROR +</dt>
+                            <p class="course-full-list-text">COMMUNITY EARNINGS</p>
+                        </div>
+
+                    </div>
+                    <div class="course-full-items ">
+                        <img src="https://www.skillsider.pk/studens-asset/assets/img/Online-Lecturer.png" alt="">
+
+                        <div>
+                            <dt>100 +</dt>
+                            <p class="course-full-list-text">LIVE TRAININGS</p>
+                        </div>
+                    </div>
+                    <div class="course-full-items ">
+                        <img src="https://www.skillsider.pk/studens-asset/assets/img/lecture-sharing.png" alt="">
+                        <div>
+                            <dt>10 +</dt>
+                            <p class="course-full-list-text"> Trainers & Courses</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- our exclosive couses section goes here -->
+        <section class="section-new-course">
+            <div class="container">
+                <div class="section-header ">
+                    <div class="section-sub-head">
+                        <h2 class="section-heading text-center">Products We Offer
+                        </h2>
+                    </div>
+                </div>
+                <div class="section-text " >
+                    <p class="mb-0 text-center sm-text-size">
+                        Now you can acquire the best knowledge and expertise from our experienced trainers. We believe you
+                        can master the art of digital entrepreneurship with our industry-leading courses.
+
+                    </p>
+                </div>
+                <div class="course-feature">
+                    <div class=" course-feature-box">
+                                                    <div class="d-flex">
+                                <div class="course-box d-flex ">
+                                    <div class="product ">
+                                        <div class="overflow">
+                                            <div class="product-img">
+                                                <a href="https://www.skillsider.pk/package/1">
+                                                    <img class="img-fluid" alt=""
+                                                        src="https://www.skillsider.pk/packages_image/1696413434.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-content">
+                                            <div class="d-flex">
+                                                <h4 class="course-title"><a href="https://www.skillsider.pk/package/1">
+                                                    SkillSider Lite</a></h4>
+                                            </div>
+                                            <div class="course-img d-flex justify-content-between align-items-center
+                                        py-2 mb-2"
+                                                style="border-bottom: 1px solid rgba(128, 128, 128, 0.563);
+                                         color: rgba(128, 128, 128, 0.942);">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <img src="https://www.skillsider.pk/studens-asset/assets/icons/icon-01.svg"
+                                                        alt="">
+                                                    
+                                                    <p>4Courses</p>
+
+
+                                                </div>
+                                                <div class=" d-flex gap-2 align-items-center">
+                                                    <img src="https://www.skillsider.pk/studens-asset/assets/icons/icon-02.svg"
+                                                        alt="">
+                                                    <p>0d 5hr 31min</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <ul class="packages-ul">
+
+                                                    <li> <i class="fa-solid fa-check"></i> Live Q&amp;A Support</li>
+                                                    <li> <i class="fa-solid fa-check"></i>10k+ Students Enrolled</li>
+                                                    <li> <i class="fa-solid fa-check"></i>Skillsider Certificate </li>
+                                                </ul>
+                                            </div>
+                                            <div class="all-btn all-category d-flex align-items-center ">
+                                                <a href="https://www.skillsider.pk/package/1">
+                                                    <button class="main__btn rounded-pill">
+                                                        <span>Get Started Now</span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="d-flex">
+                                <div class="course-box d-flex ">
+                                    <div class="product ">
+                                        <div class="overflow">
+                                            <div class="product-img">
+                                                <a href="https://www.skillsider.pk/package/2">
+                                                    <img class="img-fluid" alt=""
+                                                        src="https://www.skillsider.pk/packages_image/1713859075.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-content">
+                                            <div class="d-flex">
+                                                <h4 class="course-title"><a href="https://www.skillsider.pk/package/2">
+                                                    SkillSider Standard</a></h4>
+                                            </div>
+                                            <div class="course-img d-flex justify-content-between align-items-center
+                                        py-2 mb-2"
+                                                style="border-bottom: 1px solid rgba(128, 128, 128, 0.563);
+                                         color: rgba(128, 128, 128, 0.942);">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <img src="https://www.skillsider.pk/studens-asset/assets/icons/icon-01.svg"
+                                                        alt="">
+                                                    
+                                                    <p>8Courses</p>
+
+
+                                                </div>
+                                                <div class=" d-flex gap-2 align-items-center">
+                                                    <img src="https://www.skillsider.pk/studens-asset/assets/icons/icon-02.svg"
+                                                        alt="">
+                                                    <p>0d 7hr 54min</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <ul class="packages-ul">
+
+                                                    <li> <i class="fa-solid fa-check"></i> Live Q&amp;A Support</li>
+                                                    <li> <i class="fa-solid fa-check"></i>10k+ Students Enrolled</li>
+                                                    <li> <i class="fa-solid fa-check"></i>Skillsider Certificate </li>
+                                                </ul>
+                                            </div>
+                                            <div class="all-btn all-category d-flex align-items-center ">
+                                                <a href="https://www.skillsider.pk/package/2">
+                                                    <button class="main__btn rounded-pill">
+                                                        <span>Get Started Now</span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="d-flex">
+                                <div class="course-box d-flex ">
+                                    <div class="product ">
+                                        <div class="overflow">
+                                            <div class="product-img">
+                                                <a href="https://www.skillsider.pk/package/3">
+                                                    <img class="img-fluid" alt=""
+                                                        src="https://www.skillsider.pk/packages_image/1696413488.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-content">
+                                            <div class="d-flex">
+                                                <h4 class="course-title"><a href="https://www.skillsider.pk/package/3">
+                                                    SkillSider Pro</a></h4>
+                                            </div>
+                                            <div class="course-img d-flex justify-content-between align-items-center
+                                        py-2 mb-2"
+                                                style="border-bottom: 1px solid rgba(128, 128, 128, 0.563);
+                                         color: rgba(128, 128, 128, 0.942);">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <img src="https://www.skillsider.pk/studens-asset/assets/icons/icon-01.svg"
+                                                        alt="">
+                                                    
+                                                    <p>10Courses</p>
+
+
+                                                </div>
+                                                <div class=" d-flex gap-2 align-items-center">
+                                                    <img src="https://www.skillsider.pk/studens-asset/assets/icons/icon-02.svg"
+                                                        alt="">
+                                                    <p>0d 9hr 10min</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <ul class="packages-ul">
+
+                                                    <li> <i class="fa-solid fa-check"></i> Live Q&amp;A Support</li>
+                                                    <li> <i class="fa-solid fa-check"></i>10k+ Students Enrolled</li>
+                                                    <li> <i class="fa-solid fa-check"></i>Skillsider Certificate </li>
+                                                </ul>
+                                            </div>
+                                            <div class="all-btn all-category d-flex align-items-center ">
+                                                <a href="https://www.skillsider.pk/package/3">
+                                                    <button class="main__btn rounded-pill">
+                                                        <span>Get Started Now</span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our exclusive courses section ends here -->
+        <!-- leads guru work start -->
+
+        <div>
+            <div class="container ">
+                <section class="skill-slider-section">
+                    <div class="section-sub-head">
+                        <h2 class=" text-center section-heading ">How SkillSider Works?</h2>
+                    </div>
+                    <div class="row skill-slider-row">
+                        <div class="lead-guru-box  ">
+                            <img src="https://www.skillsider.pk/studens-asset/assets/img/learn.png" alt="" width="83" height="80">
+                            <h3 class="herosection__heading__last">Learn</h3>
+                            <div class="my-auto">
+                                <p class="sm-text-size">Learn from trainers who have real-time expertise in their respective fields.</p>
+                            </div>
+
+                        </div>
+                        <div class="lead-guru-box ">
+                            <img src="https://www.skillsider.pk/studens-asset/assets/img/profit.svg" alt="" width="83" height="80">
+                            <h3 class="herosection__heading__last">Implement </h3>
+                            <div class="my-auto">
+                                <p class="sm-text-size">Implement these trending skills of the future and grow with the digital world.</p>
+                            </div>
+                        </div>
+                        <div class="lead-guru-box ">
+                            <img src="https://www.skillsider.pk/studens-asset/assets/img/Transaction.svg" alt="" width="83" height="80">
+                            <h3 class="herosection__heading__last">Earn</h3>
+                            <div class="my-auto">
+                                <p class="sm-text-size">This helps you stand out from the crowd, Earn more money than competitors in the market.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- leads guru work ends -->
+        <!-- why choose us -->
+        <section>
+            <div class="container why-choose-us d-flex">
+                <div class="col-lg-7 choose-us-left-section">
+                    <div>
+                        <small style="color: #FB5B66; ">Why Choose Us? </small>
+                        <h1 class="section-heading">Why SkillSider</h1>
+                        <p class="text-muted sm-text-size">Skillsider is an ed-tech platform. Through our industry-leading courses, we
+                            bring the learner community of all age groups under one roof to learn, implement, and earn by
+                            the digital skills of the future that help you stand out from the crowd.</p>
+                    </div>
+                    <div class="career-group ">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 d-flex">
+                                <div class="certified-group-box  blur-border d-flex">
+                                    <img src="https://www.skillsider.pk/studens-asset/assets//img/learning.png" alt="">
+                                    <p style="overflow-y: scroll;">
+                                        <strong class="fw-bold">Skill Based Courses:</strong> SkillSider teach you the
+                                        skills of 21st century that will help you to earn more
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 d-flex">
+                                <div class="certified-group-box  blur-border d-flex">
+                                    <img src="https://www.skillsider.pk/studens-asset/assets//img/graduation.png" alt="">
+                                    <p style="overflow-y: scroll;">
+                                        <strong class="fw-bold">Course Certification:</strong>You can boost your CV by
+                                        including SkillSider certificate that help you stand out from the crowd in your
+                                        professional career.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 d-flex">
+                                <div class="certified-group-box blur-border d-flex">
+                                    <img src="https://www.skillsider.pk/studens-asset/assets//img/profit.svg" alt=""
+                                        class="certifiate-img">
+                                    <p style="overflow-y: scroll;">
+                                        <strong class="fw-bold">Affiliate Program:</strong> SkillSider students can earn a
+                                        decent amount of commission through our exclusive affiliate program.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 d-flex">
+                                <div class="certified-group-box blur-border d-flex">
+                                    <img src="https://www.skillsider.pk/studens-asset/assets//img/handshake.png" alt=""
+                                        class="certifiate-img">
+                                    <p style="overflow-y: scroll;">
+                                        <strong class="fw-bold">Partner Program:</strong> Trainers can start their journey
+                                        with the SkillSider partner program and build a strong position in the market.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-5 choose-us-right-section d-flex justify-content-center ">
+                    <img src="https://www.skillsider.pk/studens-asset/assets/img/history.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- why choose us section end -->
+
+
+        <!-- first instructor carasoul -->
+        <div class="slider-starter">
+            <div class="container">
+                <div class="text-center d-flex justify-content-between align-items-center flex-column">
+                    <h1 class="section-heading">Instructor At Skillsider</h1>
+                    <p class="main-text text-center sm-text-size">At Skillsider, you can now be assured to get the top-most training
+                        from the leading educators of their respective fields. Turn your dreams into reality with
+                        LedasGuru proficient instructors.</p>
+                </div>
+                <section class="regular slider">
+                                
+                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 512px !important; width: 512px !imortant;"
+                        src="https://www.skillsider.pk/team-image/1694118499.jpg"  
+                            class="carasoul-image"
+                        />
+                        </div>
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">Amir Jafry</h3>
+                            <p class="slider-text">CEO Skillsider</p>
+                             <p class="slider-text"></p>
+                            <div class="user-profile-icon">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                                </section>
+            </div>
+
+        </div>
+        <!-- Demanding Carasoul carasoul -->
+        <div class="slider-starter "
+            style=" background: linear-gradient(to top, var(--primary-gradiant-color) 0%, var(--primary-gradiant-color)0%,
+    var(--Secondary-gradiant-color) 100%);">
+            <div class="container">
+                <div class="text-center d-flex justify-content-between align-items-center flex-column">
+                    <h1 class="section-heading">Upskilling Courses</h1>
+                    <p class="main-text sm-text-size" >With our exclusive courses, now you can aquire the best knowledge and expertise
+                        from our experienced trainers. We believe you can master the art of digital entrepreneurship by our
+                        industry-leading courses.</p>
+                </div>
+                 <section class="regular slider">
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1697727401.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">ADSTERA BLOGGING COURSE</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1697731269.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">CANVA MASTERY</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1697534136.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">CAPCUT MOBILE VIDEO EDITING</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1697892187.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">DIGISTORE24 AFFILIATE MARKETING</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1697910946.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">SKILLSIDER AFFILIATE MARKETING [FREE COURSE]</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1699984572.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">YOUTUBE MASTERY COURSE</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1701084123.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">INSTAGRAAM MARKETING MASTERY</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1701084741.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">TIKTOK MARKETING COURSE</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1701084799.jpg"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">WHATSAPP MARKETING COURSE</h3>
+                            
+                        </div>
+
+                    </div>
+                                    <div>
+                        <div class="overflow">
+                          <img  style="hieght: 1280 !important; width: 720 !imortant;"
+                        src="https://www.skillsider.pk/course-image/1701085111.png"  
+                            class="carasoul-image"
+                        /> 
+                        </div> 
+                        <div class="carasoul-textarea">
+                            <h3 class="slider-title">WORDPRESS BASIC TO ADVANCE</h3>
+                            
+                        </div>
+
+                    </div>
+                                </section>
+            </div>
+        </div>
+        
+          <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg mx-auto">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="font-size:18px;" id="exampleModalLabel">Others Say About SkillSider</h5>
+                        <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-0 bg-dark" style=" height: 70vh;">
+                        <!-- Display the video using an iframe -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item " style=" height: 70vh; width: 100%;" id="videoIframe" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- meet our founder -->
+        <div class="meet-founder-stater">
+            <div class="container meet-founder-section">
+                <div class="d-flex justify-content-center align-items-center overflow">
+                    <img src="https://www.skillsider.pk/studens-asset/assets/img/founder-img-new.jpg" alt=""
+                        class="meet-founder-section-img">
+                </div>
+                <div class="d-flex flex-column  justify-content-center align-items-left   ">
+                    <h1 class="section-heading">Meet Our Founder</h1>
+                    <p class="sm-text-size">CEO & Founder of SkillSider, Amir Jafry sets an indomitable example for the generations to come.
+                        He incepted SkillSider in 2020 with the aim to revolutionize the ed-tech sector and introduce
+                        new
+                        trends.</p>
+                    <br />
+                    <p class="sm-text-size">Understanding the new-age formulas which help students to manifest a strong position in the
+                        market, he is constantly refining courses to introduce students to relevant content. With such
+                        an enlightening approach to the company's growth, Amir Jafry has bigger plans for SkillSider
+                        which he monitors with undivided attention and regenerative enthusiasm.</p>
+                </div>
+            </div>
+        </div>
+        <!-- meat founder section end -->
+        
+        <!-- testimonials carasoul start -->
+        <div class="slider-starter"> 
+            <div class="container">
+                <div class="slider-section-2-head">
+                      <!-- what other say Carasoul carasoul -->
+        <div class=" "
+            style=" background: linear-gradient(to top, var(--primary-gradiant-color) 0%, var(--primary-gradiant-color)0%,
+        var(--Secondary-gradiant-color) 98%);">
+            <div class="container">
+                <div class="text-center d-flex justify-content-between align-items-center flex-column">
+                    <h1 class="section-heading">What Others Have To Say About SkillSider</h1>
+                </div>
+            
+                <section class="regular slider">
+                                    <div class="card overflow video-modal" data-toggle="modal" data-target="#videoModal" data-video-id="2Odv37SZjoc?si=zPTnIdiVx3tGg7cF">
+                        <img  src="https://www.skillsider.pk/review_image/1713558516.png" class="carousel-image card-img-top" alt="Review Image">
+                      
+                    </div>
+                                    <div class="card overflow video-modal" data-toggle="modal" data-target="#videoModal" data-video-id="2112">
+                        <img  src="https://www.skillsider.pk/review_image/1698749259.png" class="carousel-image card-img-top" alt="Review Image">
+                      
+                    </div>
+                                    <div class="card overflow video-modal" data-toggle="modal" data-target="#videoModal" data-video-id="rewr">
+                        <img  src="https://www.skillsider.pk/review_image/1698749065.png" class="carousel-image card-img-top" alt="Review Image">
+                      
+                    </div>
+                            </section>
+
+            </div> 
+        </div>
+                </div>
+            </div>
+        </div>
+        <!-- testimonials carasoul end -->
+         
+     
+        <!-- joining diferent platform -->
+        <div>
+
+            <div class="container joining-section">
+                <div class="grid-item overflow">
+                    <img src="https://www.skillsider.pk/studens-asset/assets/img/Home-2.png" alt=""
+                        class="meet-founder-section-img">
+                </div>
+                <div class="d-flex justify-content-center  flex-column grid-item">
+                    <h1 class="joining-heading">"Get regular glimpses of
+                        <span style="color:#FF783E ;">everything innovative</span> we are offering”
+                    </h1>
+                    <div>
+                        <a href="">
+                            <button class="main__btn m-0 rounded-pill">
+                                <span>Follow Us On Instagram</span>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- update section for exclusice information -->
+        <div class="update-section-starter">
+            <div class="container update-section">
+                <h1 class="section-heading text-center">Stay informed with exclusive updates</h1>
+                <div class="update-email-section">
+                    <input type="email" name="code" id="code" class="update-email"
+                        placeholder="Referral code">
+
+                        <button class="main__btn m-0 rounded-pill" id="check-code-button">
+                            <span>Verify</span>
+                        </button>
+
+                </div>
+                <div class="update-inform">
+                    <h3 class="fw-bold text-white"> Disclaimer :</h3>
+                    <p>SkillSider is not responsible for payment made against our products to anyone other than our
+                        website or through affiliate link.</p>
+                </div>
+            </div>
+        </div>
+
+   <div>
+
+            <div class="container my-5">
+                <div class="courses-left-section-second-col-carasoul-starter">
+                    <!-- FAQ section -->
+                    <div class="carasoul-left-top">
+                        <h5><strong>Frequently Asked Questions</strong></h5>
+                    </div>
+                    <div>
+                         <!-- 1 -->
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">What is Skill Sider?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >Skill Sider is an ed-tech platform where we provide various e-learning courses related to career, soft skills, and business development. What started as an intent to create employment in the middle of the pandemic has become a revolution in the era of the gig economy by bridging the gap between education and entrepreneurship.</p>
+                                 </div>
+                             </div>
+                         </div>
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">What opportunity does Skill Sider provide?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >Skill Sider offers an endless number of opportunities to its learners, such as upskilling their extent of knowledge, and guiding them in their career aspects. Moreover, it boosts your social media, which helps monetize the respective platforms.</p>
+                                 </div>
+                             </div>
+                         </div>
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">Is Skill Sider Government verified?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >You can find Skill Sider on the official website of SECP (Securities &amp; Exchange Commission of Pakistan) and you can check the registration details on the same.</p>
+                                 </div>
+                             </div>
+                         </div>
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">Do I have to Enroll/Buy Skill Sider courses to sell the courses?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >Yes! The affiliate link is only generated once you buy/enroll in our courses</p>
+                                 </div>
+                             </div>
+                         </div>
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">How you can earn money?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >Firstly, you can make money by enrolling in courses that allow you to monetize your skills.
+Skill Sider courses boost your skills in a way that helps you in career growth.
+Another way is by enrolling yourself in our Affiliate Marketing Program, wherein you can sell the courses and earn about 50-70% commission from them.</p>
+                                 </div>
+                             </div>
+                         </div>
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">What is the commission structure?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >Skill Sider provides you the high-end commission, up to 50-70%, depending on your hard work</p>
+                                 </div>
+                             </div>
+                         </div>
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">What is Affiliate marketing? and how is it different from Network marketing?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >Affiliate marketing is a program where a person makes a certain amount of commission in return for selling a company’s products or services to either generate more leads or convert these leads into customers.
+Unlike network marketing, the person who introduces leads to the product in affiliate marketing gets the commission. Whereas, in network marketing, every upline earns the commission in the chain.</p>
+                                 </div>
+                             </div>
+                         </div>
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">How much is the investment?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >There is no investment. You only have to pay the fee for the course you enroll.</p>
+                                 </div>
+                             </div>
+                         </div>
+                                                  <div class="faq-section">
+                             <div class="faq-section-main-div">
+                                 <h4 class="faq-section-heading">Is it a one time fee on a monthly fee?</h4>
+                                 <p class="arrow"><i class="fa-solid faq-section-icon fa-plus"></i></p>
+                             </div>
+                            
+                             <div class="faq-list" style="background-color: rgb(255, 255, 255); display: none;">
+                                 <div class="faq-answer ">
+                                 <img src="https://www.skillsider.pk/studens-asset/assets/img/play.svg" alt="" >
+                                     <p >It is only a one-time fee you’ve to pay for every course you buy and you get lifetime access to that course.</p>
+                                 </div>
+                             </div>
+                         </div>
+                                             </div>
+                    <!-- faq section end -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal" id="codeExistsModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Referral Code</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body mb-3">
+                        <!--begin::Card body-->
+                        <div class="card-body p-9" >
+                            <p id="no-found"></p>
+                            <div id="found">
+                                <!--begin::Row-->
+                                <div class="row mb-7" id="found">
+                                    <!--begin::Label-->
+                                    <label class="col-lg-4 fw-semibold text-muted">Full Name</label>
+                                    <!--end::Label-->
+
+                                    <!--begin::Col-->
+                                    <div class="col-lg-8">
+                                        <span class="fw-bold fs-6 text-gray-800" id="username"></span>
+                                    </div>
+                                    <!--end::Col-->
+                                </div>
+                                <!--end::Row-->
+                                <!--begin::Input group-->
+                                <div class="row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="col-lg-4 fw-semibold text-muted">Referal code</label>
+                                    <!--end::Label-->
+                                    <!--begin::Col-->
+                                    <div class="col-lg-8">
+                                        <span
+                                            class="fw-bold fs-6 text-gray-800" id="ref-code"></span>
+                                    </div>
+                                    <!--end::Col-->
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="row mb-10">
+                                    <!--begin::Label-->
+                                    <label class="col-lg-4 fw-semibold text-muted">Joining Data</label>
+                                    <!--begin::Label-->
+
+                                    <!--begin::Label-->
+                                    <div class="col-lg-8">
+                                        <span
+                                            class="fw-semibold fs-6 text-gray-800" id="joining-date"></span>
+                                    </div>
+                                    <!--begin::Label-->
+                                </div>
+                                <!--end::Input group-->
+                            </div>
+
+                        </div>
+                        <!--end::Card body-->
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+       <script>
+        // JavaScript to handle passing the video ID and loading the video in the modal
+        $(document).on('click', '.video-modal', function() {
+            var videoId = $(this).data('video-id'); // Get the video ID from the button's data-video-id attribute
+            var videoIframe = document.getElementById('videoIframe');
+            videoIframe.src = 'https://www.youtube.com/embed/' + videoId; // Load the video in the iframe
+        });
+
+        // JavaScript to handle stopping the video when the modal is closed
+        $('#videoModal').on('hidden.bs.modal', function () {
+            var videoIframe = document.getElementById('videoIframe');
+            videoIframe.src = ''; // Clear the iframe source to stop the video
+        });
+    </script>
+    
+    
+
+    <footer class="footer-starter">
+    <div class="container footer-section">
+        <div class="row footer-flex">
+            <div class="footer-col col-lg-4 col-md-6 col-sm-12">
+                <a href="index.html">
+                    <img src="https://www.skillsider.pk/studens-asset/assets/img/Logo-1.png" alt="Logo" class="main-logo">
+                </a>
+                <p class="footer-text">Skillsider brings the learner community of all age groups under one roof to
+                    learn, implement, and grow with the digital skills of the future, that help you stand
+                    out from the crowd.</p>
+                <div class="footer-brands-div">
+                    <i class="fa-brands fa-facebook footer-brands-icon"></i>
+                    <i class="fa-brands fa-twitter footer-brands-icon  footer-brands-icon-active"></i>
+                    <a href="https://instagram.com/skillsider.pk?igshid=MzRlODBiNWFlZA=="><i
+                            class="fa-brands fa-instagram footer-brands-icon"></i></a>
+
+                    <i class="fa-brands fa-linkedin footer-brands-icon footer-brands-icon-active"></i>
+                    <i class="fa-brands fa-youtube footer-brands-icon footer-brands-icon-active"></i>
+                    <i class="fa-brands fa-tiktok footer-brands-icon footer-brands-icon-active"></i>
+                </div>
+            </div>
+            <div class="footer-col col-lg-3 col-md-6 col-sm-12">
+                <ul>
+                    <strong>Quick Links</strong>
+                    <li><a href="">FAQ's</a></li>
+                    <li><a href="">Disclaimer</a></li>
+                    <li><a href=""> Privacy Policy</a></li>
+                    <li><a href=""> Refund Policy</a></li>
+                    <li><a href=""> Affiliate Policy</a></li>
+                    <li><a href=""> Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col  col-lg-2 col-md-6 col-sm-12">
+                <ul>
+                    <strong>Company</strong>
+                    <li><a href="">Blog</a> </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Refund Policy</a></li>
+
+
+
+                </ul>
+            </div>
+            <div class="footer-col  col-lg-3 col-md-6 col-sm-12">
+                <ul>
+                    <strong>Address</strong>
+                    <div class="footer-address">
+                        <div class="d-flex gap-2 "> 
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p class="footer-text ">
+                                15, Main Bazar, Chak NO.93 S.B., Sargodha, Punjab, Pakistan</p>
+                        </div>
+                        <div class="d-flex gap-2 ">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <a href="" class="footer-text ">info@skillsider.pk</a>
+                        </div>
+                        <div class="d-flex gap-2 ">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <a class="footer-text " href="tel: +923196662962">Phone: +923132960093</a>
+                        </div>
+                    </div>
+
+
+
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p class="text-center">© 2023 SkillSider. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://www.skillsider.pk/studens-asset/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.skillsider.pk/studens-asset/js/query.js"></script>
+     <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script>
+        $('#check-code-button').click(function () {
+          
+            var code = $('#code').val();
+           
+            $.ajax({
+                url: "https://www.skillsider.pk/affiliate/verification/check/ajax",
+                method: 'POST',
+                data: {
+                    code: code,
+                    _token: 'qn9by014dwrNQVQ5lipMlIH725WN0pHzoyxY5feS', // Include CSRF token for Laravel
+                },
+                success: function (response) {
+                    if (response.exists) { 
+                        document.getElementById("no-found").style.display = 'none'
+                        document.getElementById("found").style.display = 'block'
+                        document.getElementById("username").innerHTML = response.data.username
+                        document.getElementById("ref-code").innerHTML = response.data.code
+                        document.getElementById("joining-date").innerHTML = response.data.date
+                        $('#codeExistsModal').modal('show');
+                    } else {
+                        document.getElementById("no-found").style.display = 'block'
+                        document.getElementById("found").style.display = 'none'
+                        $('#codeExistsModal').modal('show');
+                        document.getElementById("no-found").innerHTML = "Referral code does not exist"
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while checking the code.');
+                }
+            });
+         });
+         
+    </script>
+    
+<script>
+    // Custom jQuery to close the dropdown when a menu item is clicked on mobile
+    $(document).ready(function() {
+
+      $('#dropdown').on('click', function(event) {
+          $('#dropdown-menu').toggle();
+      });
+    });
+  </script>
+
+    
+</body>
+
+</html>

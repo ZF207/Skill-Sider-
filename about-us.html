@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   
+    <!-- slice slide carasoul -->
+         
+    <link rel="stylesheet" type="text/css" href="https://www.skillsider.pk/studens-asset/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://www.skillsider.pk/studens-asset/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://www.skillsider.pk/studens-asset/css/style.css">
+    <link rel="stylesheet" href="https://www.skillsider.pk/studens-asset/css/query.css">
+    <link rel="stylesheet" href="https://www.skillsider.pk/studens-asset/css/general.css">
+    <link rel="shortcut icon" href="https://www.skillsider.pk/assets/images/logo.png" />
+    <title>SkillSider.pk</title>
+    <!-- font awesome solid -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media (max-width: 576px) {
+            .sm-text-size {
+                font-size: 20px;
+            }
+        }
+    </style>
+   <style>
+    /* Custom styles for centering the menu */
+    @media (min-width: 768px) {
+      .navbar-nav {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    /* Custom styles to remove border around the toggle button */
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    .dropdown-menu::before{
+        border:none;
+    }
+    .navbar-toggler{
+        font-size: x-large;
+    color: #FFA42D;
+        
+    }
+    .main-nav-link{
+        
+        font-size:large!important;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var menuIsOpen = false;
+
+      navbarToggler.addEventListener('click', function () {
+        menuIsOpen = !menuIsOpen;
+        updateToggleButton();
+      });
+
+      function updateToggleButton() {
+        var icon = menuIsOpen ? '✕' : '☰';
+        navbarToggler.innerHTML = icon;
+      }
+    });
+  </script>
+  
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light header bg-white">
+  <div class="container-fluid">
+
+    <!-- Logo on the left -->
+    
+     <div class="main-logo-div">
+        <a href="https://www.skillsider.pk/home" class="navbar-brand">
+            <img src="https://www.skillsider.pk/assets/images/mian-logo.png" alt="Logo" class="main-logo" >
+        </a>
+    </div>
+
+    <!-- Custom toggle button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      ☰ <!-- Default icon, will be updated by JavaScript -->
+    </button>
+
+    <!-- Centered navigation menu with dropdown and login button -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link main-nav-link" href="https://www.skillsider.pk/home">Home</a>
+        </li>
+        <li class="nav-item dropdown px-lg-1" id="dropdown">
+    <a class="nav-link dropdown-toggle main-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Products We Offer
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown-menu">
+                                            <a class="dropdown-item main-nav-link px-0" href="https://www.skillsider.pk/package/1" data-bs-auto-close="true">SkillSider Lite</a>
+                <hr class="my-0 mb-1"/>
+                            <a class="dropdown-item main-nav-link px-0" href="https://www.skillsider.pk/package/2" data-bs-auto-close="true">SkillSider Standard</a>
+                <hr class="my-0 mb-1"/>
+                            <a class="dropdown-item main-nav-link px-0" href="https://www.skillsider.pk/package/3" data-bs-auto-close="true">SkillSider Pro</a>
+                <hr class="my-0 mb-1"/>
+                        </div>
+</li>
+
+
+        <li class="nav-item px-lg-1">
+          <a class="nav-link main-nav-link" href="https://www.skillsider.pk/about-us">About</a>
+        </li>
+        <li class="nav-item px-lg-1">
+          <a class="nav-link main-nav-link" href="https://www.skillsider.pk/blog">Blog</a>
+        </li>
+        <li class="nav-item px-lg-1">
+          <a class="nav-link main-nav-link" href="https://www.skillsider.pk/contact-us">Contact</a>
+        </li>
+        
+      </ul>
+
+      <!-- Login button - visible on small screens -->
+      
+      <div class="d-flex d-lg-none">
+                   <a  href="https://www.skillsider.pk/login/page">
+             <button class="btn btn-outline-primary main__btn rounded-pill " type="button">Dashboard</button>
+            </a>
+                  </div>
+    </div>
+
+    <!-- Login button on the right - visible on larger screens -->
+    <div class="d-none d-lg-flex">
+     
+                    
+            <a  href="https://www.skillsider.pk/login/page">
+             <button class="btn btn-outline-primary main__btn rounded-pill nav-btn-2" type="button">Dashboard</button>
+            </a>
+                </div>
+
+  </div>
+</nav>
+   
+
+    <span class="btn-mobile-nav" style="display:none!important">
+        
+    </span>
+
+ 
+   
+ 
+   
+    <main>
+    <!-- inner -->
+    
+    <!-- about company -->
+    <section>
+        <div class="container why-choose-us d-flex">
+            <div class="col-lg-7 choose-us-left-section">
+                <small style="color: #fb5b66"
+                    >We Are An Open Book?
+                </small>
+                <h1 class="section-heading">About Company</h1>
+                <p class="text-muted">
+                    SkillSider, a leading ed-tech platform, prepares you
+                    for real-world opportunities that you have always
+                    desired. With the vision to import valuable
+                    knowledge, we introduce you to the top industry
+                    professionals at LedasGuru. Fuel the passion in you
+                    and get years ahead in your career with SkillSider-
+                    your one-stop solution for all your educational
+                    needs.
+                </p>
+                <div>
+                    <div class="d-flex gap-2 align-items-center my-2">
+                        <i
+                            class="fa fa-check about-company-check-icon"
+                        ></i>
+                        <p>
+                            Passion and commitment to delivery
+                            excellence
+                        </p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center mb-2">
+                        <i
+                            class="fa fa-check about-company-check-icon"
+                        ></i>
+                        <p>Innovation and collaboration culture</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center mb-2">
+                        <i
+                            class="fa fa-check about-company-check-icon"
+                        ></i>
+                        <p>Transparency</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center mb-2">
+                        <i
+                            class="fa fa-check about-company-check-icon"
+                        ></i>
+                        <p>Commitment towards excellence</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center mb-2">
+                        <i
+                            class="fa fa-check about-company-check-icon"
+                        ></i>
+                        <p>Integrity</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="col-lg-5 choose-us-right-section d-flex justify-content-center"
+            >
+                <img src="https://www.skillsider.pk/studens-asset/assets/img/why-join.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- long term -->
+
+    <div
+        style="
+            background: linear-gradient(
+                to right,
+                var(--primary-gradiant-color) 0%,
+                var(--primary-gradiant-color) 0%,
+                var(--Secondary-gradiant-color) 100%
+            );
+        "
+    >
+        <div class="container">
+            <section class="skill-slider-section">
+                <div class="section-sub-head">
+                    <h2 class="text-center section-heading">
+                        Long-term Vision and Trajectory
+                    </h2>
+                </div>
+                <div class="row skill-slider-row">
+                    <div class="lead-guru-box">
+                        <i
+                            class="fa-solid fa-people-roof course-list-icon"
+                        ></i>
+                        <h3 class="herosection__heading__last">
+                            Mission
+                        </h3>
+                        <div class="my-auto">
+                            <p>
+                                With the mission to bring emerging
+                                leaders and experienced teachers on one
+                                platform to generate productive results
+                                and create a win-win situation for all,
+                                SkillSider is creating a revolutionary
+                                impact in the ed-tech industry. The
+                                platform fosters quality education,
+                                which precedes your exceptional
+                                forthcoming results.
+                            </p>
+                            <p class="fw-bold mt-3">
+                                <a
+                                    href=""
+                                    style="
+                                        color: #fb5b66;
+                                        font-size: 18px;
+                                    "
+                                >
+                                    Result</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lead-guru-box">
+                        <i
+                            class="fa-solid fa-people-roof course-list-icon"
+                        ></i>
+                        <h3 class="herosection__heading__last">
+                            Vision
+                        </h3>
+
+                        <div class="my-auto">
+                            <p>
+                                SkillSider was founded with the vision
+                                to provide online education and educate
+                                learners about the trending skills that
+                                are dominating the professional
+                                industry. At SkillSider, we believe
+                                nothing is unachievable if you put your
+                                heart and soul into it. If you are
+                                registering yourself with SkillSider
+                                today, then you can feel assured of
+                                having a huge success ratio in getting
+                                placed in the top leading companies.
+                            </p>
+                            <p class="fw-bold mt-3">
+                                <a
+                                    href=""
+                                    style="
+                                        color: #fb5b66;
+                                        font-size: 18px;
+                                    "
+                                >
+                                    Result</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lead-guru-box">
+                        <i
+                            class="fa-solid fa-people-roof course-list-icon"
+                        ></i>
+                        <h3 class="herosection__heading__last">
+                            Values
+                        </h3>
+                        <div class="my-auto">
+                            <p>
+                                SkillSider envisions making a
+                                transformative change in the lives of
+                                students through its world-class faculty
+                                and interactive sessions. Having rooted
+                                its business modules in integrity and
+                                perseverance, SkillSider aims to create
+                                skilled individuals who excel in their
+                                fields.
+                            </p>
+                            <p class="fw-bold mt-3">
+                                <a
+                                    href=""
+                                    style="
+                                        color: #fb5b66;
+                                        font-size: 18px;
+                                    "
+                                >
+                                    Result</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- our approach -->
+    <section>
+        <div class="container why-choose-us d-flex">
+            <div
+                class="col-lg-6 d-flex flex-column justify-content-center gap-2"
+            >
+                <div class="d-flex gap-2">
+                    <i
+                        class="fa-regular fa-lightbulb about-approach-icon"
+                    ></i>
+                    <h1 class="section-heading">Our Approach</h1>
+                </div>
+
+                <p class="text-muted" style="font-size: 18px">
+                    With an endeavor to facilitate quality education,
+                    SkillSider is making every possible effort to bring
+                    a revolution to the emerging ed-tech industry. Now
+                    with the growing number of students who wish to
+                    upskill themselves with the latest trends, online
+                    educational platforms are manifesting a strong
+                    market in the professional world. Hence, SkillSider,
+                    with its dynamic team and exceptional courses, is
+                    helping you transform your professional journey to a
+                    whole new level.
+                </p>
+            </div>
+            <div
+                class="col-lg-6 choose-us-right-section d-flex justify-content-center"
+            >
+                <img src="https://www.skillsider.pk/studens-asset/assets/img/why-join.png" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- our promises -->
+    <section>
+        <div class="container why-choose-us d-flex flex-row-reverse">
+            <div
+                class="col-lg-6 d-flex flex-column justify-content-center gap-2"
+            >
+                <div class="d-flex gap-2">
+                    <i
+                        class="fa-solid fa-person about-approach-icon"
+                    ></i>
+                    <h1 class="section-heading">Our Promise</h1>
+                </div>
+
+                <p class="text-muted" style="font-size: 18px">
+                    With an endeavor to facilitate quality education,
+                    SkillSider is making every possible effort to bring
+                    a revolution to the emerging ed-tech industry. Now
+                    with the growing number of students who wish to
+                    upskill themselves with the latest trends, online
+                    educational platforms are manifesting a strong
+                    market in the professional world. Hence, SkillSider,
+                    with its dynamic team and exceptional courses, is
+                    helping you transform your professional journey to a
+                    whole new level.
+                </p>
+            </div>
+            <div
+                class="col-lg-6 choose-us-right-section d-flex justify-content-center"
+            >
+                <img src="https://www.skillsider.pk/studens-asset/assets/img/why-join.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- revlution -->
+    <div class="about-revolution">
+        <h2 class="section-header fw-bold">
+            Beginning of a revolution
+        </h2>
+        <p class="main-text">
+            We believe in doing things the right way! SkillSider
+            envisions transforming the way professionals learn and grow,
+            empowering them to take charge of their own career and stay
+            ahead in today's competitive job industry. Initiating a new
+            trend in the professional realm, we aim to make your
+            learning journey easier.
+        </p>
+        <a href="">
+            <button class="main__btn rounded-pill">
+                <span>Get Started Now</span>
+                <i class="main-button-arrow fa fa-arrow-right"></i>
+            </button>
+        </a>
+    </div>
+
+    <!-- Demanding Carasoul carasoul -->
+    <div class="slider-starter">
+        <div class="container">
+            <div
+                class="text-center d-flex justify-content-between align-items-center flex-column"
+            >
+                <h1 class="section-heading">Meet our Team</h1>
+                <p class="main-text">
+                    Interact with the masterminds who make you go far in
+                    your career. With their knowledge and your belief,
+                    become a renowned name in your respective domain.
+                </p>
+            </div>
+            <section class="regular slider">
+                                <div>
+                    <div class="overflow">
+                        <img
+                        src="https://www.skillsider.pk/team-image/1694118499.jpg"  height="300"
+                            class="carasoul-image"
+                        />
+                    </div>
+
+                    <div class="carasoul-textarea">
+                        <h3 class="slider-title">
+                            Amir Jafry
+                        </h3>
+                        <p class="slider-text">CEO Skillsider</p>
+                    </div>
+                </div>
+                                
+            </section>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="footer-starter">
+    <div class="container footer-section">
+        <div class="row footer-flex">
+            <div class="footer-col col-lg-4 col-md-6 col-sm-12">
+                <a href="index.html">
+                    <img src="https://www.skillsider.pk/studens-asset/assets/img/Logo-1.png" alt="Logo" class="main-logo">
+                </a>
+                <p class="footer-text">Skillsider brings the learner community of all age groups under one roof to
+                    learn, implement, and grow with the digital skills of the future, that help you stand
+                    out from the crowd.</p>
+                <div class="footer-brands-div">
+                    <i class="fa-brands fa-facebook footer-brands-icon"></i>
+                    <i class="fa-brands fa-twitter footer-brands-icon  footer-brands-icon-active"></i>
+                    <a href="https://instagram.com/skillsider.pk?igshid=MzRlODBiNWFlZA=="><i
+                            class="fa-brands fa-instagram footer-brands-icon"></i></a>
+
+                    <i class="fa-brands fa-linkedin footer-brands-icon footer-brands-icon-active"></i>
+                    <i class="fa-brands fa-youtube footer-brands-icon footer-brands-icon-active"></i>
+                    <i class="fa-brands fa-tiktok footer-brands-icon footer-brands-icon-active"></i>
+                </div>
+            </div>
+            <div class="footer-col col-lg-3 col-md-6 col-sm-12">
+                <ul>
+                    <strong>Quick Links</strong>
+                    <li><a href="">FAQ's</a></li>
+                    <li><a href="">Disclaimer</a></li>
+                    <li><a href=""> Privacy Policy</a></li>
+                    <li><a href=""> Refund Policy</a></li>
+                    <li><a href=""> Affiliate Policy</a></li>
+                    <li><a href=""> Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col  col-lg-2 col-md-6 col-sm-12">
+                <ul>
+                    <strong>Company</strong>
+                    <li><a href="">Blog</a> </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Refund Policy</a></li>
+
+
+
+                </ul>
+            </div>
+            <div class="footer-col  col-lg-3 col-md-6 col-sm-12">
+                <ul>
+                    <strong>Address</strong>
+                    <div class="footer-address">
+                        <div class="d-flex gap-2 "> 
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p class="footer-text ">
+                                15, Main Bazar, Chak NO.93 S.B., Sargodha, Punjab, Pakistan</p>
+                        </div>
+                        <div class="d-flex gap-2 ">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <a href="" class="footer-text ">info@skillsider.pk</a>
+                        </div>
+                        <div class="d-flex gap-2 ">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <a class="footer-text " href="tel: +923196662962">Phone: +923132960093</a>
+                        </div>
+                    </div>
+
+
+
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p class="text-center">© 2023 SkillSider. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://www.skillsider.pk/studens-asset/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.skillsider.pk/studens-asset/js/query.js"></script>
+     <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script>
+        $('#check-code-button').click(function () {
+          
+            var code = $('#code').val();
+           
+            $.ajax({
+                url: "https://www.skillsider.pk/affiliate/verification/check/ajax",
+                method: 'POST',
+                data: {
+                    code: code,
+                    _token: 'qn9by014dwrNQVQ5lipMlIH725WN0pHzoyxY5feS', // Include CSRF token for Laravel
+                },
+                success: function (response) {
+                    if (response.exists) { 
+                        document.getElementById("no-found").style.display = 'none'
+                        document.getElementById("found").style.display = 'block'
+                        document.getElementById("username").innerHTML = response.data.username
+                        document.getElementById("ref-code").innerHTML = response.data.code
+                        document.getElementById("joining-date").innerHTML = response.data.date
+                        $('#codeExistsModal').modal('show');
+                    } else {
+                        document.getElementById("no-found").style.display = 'block'
+                        document.getElementById("found").style.display = 'none'
+                        $('#codeExistsModal').modal('show');
+                        document.getElementById("no-found").innerHTML = "Referral code does not exist"
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while checking the code.');
+                }
+            });
+         });
+         
+    </script>
+    
+<script>
+    // Custom jQuery to close the dropdown when a menu item is clicked on mobile
+    $(document).ready(function() {
+
+      $('#dropdown').on('click', function(event) {
+          $('#dropdown-menu').toggle();
+      });
+    });
+  </script>
+
+    
+</body>
+
+</html>
